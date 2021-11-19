@@ -116,6 +116,7 @@ flags.DEFINE_integer('random_seed', None, 'The random seed for the data '
 flags.DEFINE_boolean('use_precomputed_msas', False, 'Whether to read MSAs that '
                      'have been written to disk. WARNING: This will not check '
                      'if the sequence, database or configuration have changed.')
+flags.DEFINE_boolean('skip_relax', False, 'Whether to skip the relax step.')
 
 FLAGS = flags.FLAGS
 
@@ -155,6 +156,8 @@ def predict_structure(
   msa_output_dir = os.path.join(output_dir, 'msas')
   if not os.path.exists(msa_output_dir):
     os.makedirs(msa_output_dir)
+  if FLAGS.skip_relax:
+    amber_relaxer = None
 
   # Get features.
   t_0 = time.time()
