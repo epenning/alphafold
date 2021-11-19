@@ -44,6 +44,13 @@ MODEL_PRESETS = {
         'model_4',
         'model_5',
     ),
+    'monomer_1': (
+        'model_1',
+    ),
+    'monomer_2': (
+        'model_1',
+        'model_2',
+    ),
     'monomer_ptm': (
         'model_1_ptm',
         'model_2_ptm',
