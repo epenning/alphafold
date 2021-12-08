@@ -161,7 +161,7 @@ def main(argv):
       ('obsolete_pdbs_path', obsolete_pdbs_path),
   ]
 
-  if FLAGS.model_preset == 'multimer':
+  if 'multimer' in FLAGS.model_preset:
     database_paths.append(('uniprot_database_path', uniprot_database_path))
     database_paths.append(('pdb_seqres_database_path',
                            pdb_seqres_database_path))
