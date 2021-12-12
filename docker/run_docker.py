@@ -62,7 +62,7 @@ flags.DEFINE_enum(
     'config (reduced_dbs) or full genetic database config (full_dbs)')
 flags.DEFINE_enum(
     'model_preset', 'monomer',
-    ['monomer', 'monomer_casp14', 'monomer_ptm', 'multimer'],
+    ['monomer', 'monomer_1', 'monomer_2', 'monomer_casp14', 'monomer_ptm', 'multimer', 'multimer_1', 'multimer_2'],
     'Choose preset model configuration - the monomer model, the monomer model '
     'with extra ensembling, monomer model with pTM head, or multimer model')
 flags.DEFINE_boolean(
