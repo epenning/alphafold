@@ -100,7 +100,7 @@ flags.DEFINE_enum('db_preset', 'full_dbs',
                   'smaller genetic database config (reduced_dbs) or '
                   'full genetic database config  (full_dbs)')
 flags.DEFINE_enum('model_preset', 'monomer',
-                  ['monomer', 'monomer_1', 'monomer_2', 'monomer_casp14', 'monomer_ptm', 'multimer', 'multimer_1', 'multimer_2'],
+                  ['monomer', 'monomer_1', 'monomer_2', 'monomer_casp14', 'monomer_ptm', 'monomer_ptm_1', 'multimer', 'multimer_1', 'multimer_2'],
                   'Choose preset model configuration - the monomer model, '
                   'the monomer model with extra ensembling, monomer model with '
                   'pTM head, or multimer model')
